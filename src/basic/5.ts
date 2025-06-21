@@ -9,5 +9,6 @@ enum DayOfWeek {
   }
   
   
-  const isWeekend = (day: DayOfWeek): boolean => {
-  }
+const isWeekend = (day: DayOfWeek): boolean => {
+  return (day !== DayOfWeek.Sunday && day !== DayOfWeek.Saturday);
+}
